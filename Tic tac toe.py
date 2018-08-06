@@ -1,5 +1,4 @@
-import IPython.display as display
-from IPython.display import clear_output
+
 
 #constants
 NUMBER_COLUMNS_ROWS = 3
@@ -29,6 +28,10 @@ efficienter gemaakt kunnen worden.
 
 #misschien later ook nog een feature toevoegen waardoor je je eigen character kan kiezen
 
+board = [[' ', ' ', ' '],
+         [' ', ' ', ' '],
+         [' ', ' ', ' '],]
+
 def print_board(matrix):
     for i in range(NUMBER_COLUMNS_ROWS):
         for j in range(NUMBER_COLUMNS_ROWS):
@@ -44,6 +47,7 @@ def is_in_range():
 def ask_coordinate():
     pass
 
+"""
 def start_a_game():
     print(FIRST_GAME_MESSAGE)
     #create game object. every time a new game is made is the other deleted or will it flote in memory. If it is how to prevent this ask dad
@@ -60,7 +64,7 @@ def start_a_game():
             #print last board
             #say who won or that its a tie
 
-
+"""
 
 
 
@@ -79,4 +83,5 @@ def start_tictactoe():
         print(BYE_MESSAGE)
 
 if __name__ == '__main__':
-    start_tictactoe()
+    #start_tictactoe()
+    print_board(board)
